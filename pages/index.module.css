@@ -66,9 +66,7 @@
   font-style: italic;
 }
 
-/* index.module.css */
-
-/* Add these styles at the end of the file */
+/* Dropdown styles */
 .dropdown {
   display: none;
   position: absolute;
@@ -94,4 +92,41 @@
 
 .dropdownItem:hover {
   background-color: #17a2b8; /* Light blue on hover */
+}
+
+/* Login form styles */
+.loginForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 400px;
+}
+
+.loginForm input {
+  width: calc(100% - 40px);
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.loginForm button {
+  width: calc(100% - 40px);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #114f8b;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginForm button:hover {
+  background-color: #0e3e6f;
 }
