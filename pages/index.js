@@ -1,4 +1,4 @@
-// index.js
+// pages/index.js
 
 import Link from 'next/link';
 import { useState } from 'react';
@@ -31,7 +31,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className={styles.heroSection} id="top">
+    <div className={styles.heroSection}>
       <nav className={styles.navbar}>
         <div className={styles.logo}>
           <Link href="/">
@@ -94,6 +94,11 @@ const HeroSection = () => {
                 </li>
               </ul>
             )}
+          </li>
+          <li>
+            <Link href="/login">
+              <div className={styles.navLink}>Login</div>
+            </Link>
           </li>
           <li>
             <Link href="/contact">
