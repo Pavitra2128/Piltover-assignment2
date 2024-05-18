@@ -1,5 +1,3 @@
-// pages/index.js
-
 import Link from 'next/link';
 import { useState } from 'react';
 import styles from "./index.module.css";
@@ -98,6 +96,16 @@ const HeroSection = () => {
           <li>
             <Link href="/login">
               <div className={styles.navLink}>Login</div>
+            </Link>
+          </li>
+          <li>
+            <Link href="/signup">
+              <div className={styles.navLink}>Signup</div>
+            </Link>
+          </li>
+          <li>
+            <Link href="/StudentsPage">
+              <div className={styles.navLink}>Students</div>
             </Link>
           </li>
           <li>
